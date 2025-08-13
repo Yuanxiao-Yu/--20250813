@@ -137,6 +137,7 @@ run_erp_analysis <- function(data, measure, erp_name, positions) {
       expected = expected_per_subject,
       complete = (n_obs == expected),
       .groups = "drop"
+      
     )
   
   complete_subjects <- complete_check$sample_name[complete_check$complete]
